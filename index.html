@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RK BHAI KALYAN FIXER</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+<!-- META PIXEL (NO PAGE VIEW) -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];
+t=b.createElement(e);t.async=!0;
+t.src=v;
+s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}
+(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', 'YOUR_PIXEL_ID');
+
+/* ❌ PageView intentionally removed */
+</script>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:url('https://i.supaimg.com/f77790f5-a213-49f0-a481-8f7fdfc2fef1/428cc20f-4a4c-4217-aae9-0b5b66870b19.jpg') no-repeat center center/cover;
+min-height:100vh;
+color:#fff;
+}
+
+.overlay{
+width:100%;
+min-height:100vh;
+background:linear-gradient(135deg, rgba(0,0,0,0.80), rgba(120,0,255,0.55));
+backdrop-filter:blur(20px);
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:30px 20px;
+text-align:center;
+}
+
+.content{
+max-width:420px;
+width:100%;
+}
+
+.logo{
+width:120px;
+height:120px;
+border-radius:50%;
+object-fit:cover;
+border:4px solid #fff;
+margin-bottom:20px;
+box-shadow:0 0 30px rgba(255,255,255,0.7);
+}
+
+h1{
+font-size:20px;
+font-weight:800;
+margin-bottom:20px;
+}
+
+.cta-btn{
+background:linear-gradient(45deg,#ff0080,#ff8c00);
+padding:14px 25px;
+border:none;
+border-radius:50px;
+color:#fff;
+font-weight:600;
+cursor:pointer;
+font-size:15px;
+box-shadow:0 0 25px rgba(255,0,128,0.7);
+transition:0.3s;
+}
+
+.cta-btn:hover{
+transform:scale(1.06);
+}
+
+.counter{
+margin-top:10px;
+font-size:13px;
+}
+
+.benefits{
+margin-top:25px;
+font-size:14px;
+line-height:2;
+list-style:none;
+padding:0;
+}
+
+.disclaimer{
+margin-top:20px;
+font-size:11px;
+opacity:0.85;
+}
+
+.footer{
+margin-top:25px;
+font-size:13px;
+}
+
+.footer span{
+color:#ff8c00;
+font-weight:700;
+}
+
+.floating-btn{
+position:fixed;
+bottom:20px;
+right:20px;
+background:linear-gradient(45deg,#ff0080,#ff8c00);
+padding:14px 22px;
+border-radius:50px;
+color:#fff;
+font-weight:600;
+cursor:pointer;
+box-shadow:0 0 30px rgba(255,0,128,0.9);
+animation:pop 1.5s infinite;
+z-index:999;
+}
+
+@keyframes pop{
+0%{transform:scale(1);}
+50%{transform:scale(1.12);}
+100%{transform:scale(1);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="overlay">
+<div class="content">
+
+<img src="https://i.supaimg.com/f77790f5-a213-49f0-a481-8f7fdfc2fef1/f5563e68-466c-4b0a-9b7a-da75269e8ea0.jpg" class="logo">
+
+<h1>𝗥𝗞 𝗕𝗛𝗔𝗜 𝗞𝗔𝗟𝗬𝗔𝗡 𝗙𝗜𝗫𝗘𝗥</h1>
+
+<button class="cta-btn" onclick="joinTelegram()">🔘𝗝𝗢𝗜𝗡 𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠 𝗡𝗢𝗪 🔘</button>
+
+<div class="counter">
+Join Click Count: <span id="clickCount">0</span>
+</div>
+
+<ul class="benefits">
+<li>✔ Daily Kalyan Fix Tips</li>
+<li>✔ Strong Market Analysis</li>
+<li>✔ Single Ank & Jodi Tricks</li>
+<li>✔ Fast & Accurate Updates</li>
+</ul>
+
+<div class="disclaimer">
+⚠ This channel is for informational & entertainment purposes only.
+</div>
+
+<div class="footer">
+Managed By <span>Sr_Digital</span>
+</div>
+
+</div>
+</div>
+
+<div class="floating-btn" onclick="joinTelegram()">
+🔘 𝗝𝗢𝗜𝗡 𝗡𝗢𝗪 🔘
+</div>
+
+<script>
+let count = 0;
+let clicked = false; // double event protection
+
+function joinTelegram(){
+
+if(!clicked){
+
+// 🔥 Custom Meta Event Fire
+fbq('trackCustom', 'TelegramSubscribe');
+
+clicked = true;
+}
+
+count++;
+document.getElementById("clickCount").innerText = count;
+
+window.open("https://t.me/+5GD0sgFH0Os5ZTQ1", "_blank");
+}
+</script>
+
+</body>
+</html>
