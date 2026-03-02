@@ -7,7 +7,7 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 
-<!-- META PIXEL (NO PAGE VIEW) -->
+<!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -23,9 +23,14 @@ s.parentNode.insertBefore(t,s)}
 'https://connect.facebook.net/en_US/fbevents.js');
 
 fbq('init', '1670645630949780');
-
-/* ❌ PageView intentionally removed */
+fbq('track', 'PageView');
 </script>
+
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1670645630949780&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel Code -->
 
 <style>
 *{
@@ -183,15 +188,12 @@ Managed By <span>Sr_Digital</span>
 
 <script>
 let count = 0;
-let clicked = false; // double event protection
+let clicked = false;
 
 function joinTelegram(){
 
 if(!clicked){
-
-// 🔥 Custom Meta Event Fire
 fbq('trackCustom', 'TelegramSubscribe');
-
 clicked = true;
 }
 
